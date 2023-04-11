@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resources/css/style.css">
+  <title>Weather Now</title>
+</head>
+<body>
+
+  <div id="root">
+    <!-- --------------------------NAVIGATION------------------------- -->
+    <nav>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="./index.html"><img src="./resources/img/WeatherNow.svg" alt="Weather Now Logo"></a>
+      </div>
+
+      <!-- Search bar -->
+      <div class="search-bar">
+        <button type="submit" id="submit"><img src="./resources/img/Search.svg" alt=""></button>
+        <input type="text" name="search" id="search" placeholder="Search location..." autocomplete="off">
+      </div> 
+
+      <div class="nav-items">
+        <div class="location-icon"><img src="./resources/img/location-iconn.svg" alt="location-icon"></div>
+        <div class="location-text" id="location">Abbotsford,BC</div>
+      </div>
+
+    </nav>
+    <!-- ------------------------------------------------------------- -->
+
+    <!-- -----------------------DATE SCROLLER------------------------- -->
+    <div class="date-scroller">
+      <div class="date">April 8</div>
+      <div class="date">April 9</div>
+      <div class="date">April 10</div>
+      <div class="date">April 11</div>
+      <div class="date">April 12</div>
+      <div class="date">April 13</div>
+    </div>
+    <!-- ------------------------------------------------------------- -->
+
+    <!-- -----------------------WEATHER DETAILS ---------------------- -->
+    <div class="weather-details">
+
+      <div class="temp-reading">
+        <div><p id="temp">1</p></div>
+        <div class="degree-sign"></div>
+        <div class="unit">C</div>
+      </div>
+
+      <div class="details">
+        <p>Cloud: <span id="cloud_pctUI">33%</span></p>
+        <p>Humidity: <span id="humidity-UI">92%</span></p>
+        <p>Wind: <span id="wind-UI">5km/h</span></p>
+      </div>
+
+      <div class="day-details">
+        <h1>Weather</h1>
+        <p id="day">Friday, 10pm</p>
+        <p id="feels-like">Cloudy</p>
+      </div>
+    </div>
+
+    <div class="more-details">
+
+      <div class="detail">
+        <div class="property">Humidity</div>
+        <div class="value" id="humidity">100%</div>
+      </div>
+      <div class="detail">
+        <div class="property">Cloud</div>
+        <div class="value" id="cloud_pct">100%</div>
+      </div>
+      <div class="detail">
+        <div class="property">Sunrise</div>
+        <div class="value" id="sunrise">100%</div>
+      </div>
+      <div class="detail">
+        <div class="property">Sunset</div>
+        <div class="value" id="sunset">100%</div>
+      </div>
+      <div class="detail">
+        <div class="property">Wind</div>
+        <div class="value" id="wind">100%</div>
+      </div>
+      <div class="detail">
+        <div class="property">Wind Degree</div>
+        <div class="value" id="wind-deg">100%</div>
+      </div>
+      <div class="detail">
+        <div class="property">Min Temp</div>
+        <div class="value" id="min">100%</div>
+      </div>
+      <div class="detail">
+        <div class="property">Max Temp</div>
+        <div class="value" id="max">100%</div>
+      </div>
+
+    </div>
+    <!-- ------------------------------------------------------------- -->
+
+    <!-- ----------------------POPULAR LOCATIONS --------------------- -->
+
+    <div class="popular-locations">
+      <h1>Popular Locations</h1>
+      <div class="row">
+        <div class="location" id="abbotsford">Abbotsford,BC</div>
+        <div class="location" id="vancouver">Vancouver,BC</div>
+        <div class="location" id="toronto">Toronto,ON</div>
+        <div class="location" id="mission">Mission,BC</div>
+      </div>
+      <div class="row">
+        <div class="location" id="richmond">Richmond,BC</div>
+        <div class="location" id="brampton">Brampton,ON</div>
+        <div class="location" id="hope">Hope,BC</div>
+        <div class="location" id="langley">Langley,BC</div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------- -->
+
+    <div class="footer">
+      <img src="./resources/img/WeatherNow.svg" alt="">
+    </div>
+  </div>
+  <script src="weatherNow.js"></script>
+</body>
+</html>
